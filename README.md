@@ -1,15 +1,37 @@
 # CGDPM
-
-## Introduction
-
-Enterprise credit rating often relies on heterogeneous data sources with inconsistent update frequencies, leading to heterogeneous temporal granularity across variables. Existing methods do not fully model these dynamics or clearly leverage the different roles of low- and high-frequency signals.
+## Constant-Guided Heterogeneous-Aware Dual-Phase Modulation Framework for Enterprise Credit Rating
 
 
-CGDPM (Constant-Guided Heterogeneous Aware Dual-Phase Modulation) addresses this by combining: (a) switchable temporal encoders for high-frequency dynamics, (b) constant-guided clustering for low-frequency piece-wise constant information, and (c) dual-phase feature-wise modulation for coarse-to-fine fusion. Experiments on a real-world heterogeneous enterprise dataset show strong performance and practical compatibility across multiple temporal backbones.
+<p align="center">
+  <b>PyTorch implementation of CGDPM</b><br>
+  A heterogeneous temporal granularity modeling framework for enterprise credit rating.
+</p>
 
-![CGDPM Framework](figures/framework.jpg)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg">
+  <img src="https://img.shields.io/badge/PyTorch-2.0+-red.svg">
+  <img src="https://img.shields.io/badge/Task-Credit%20Rating-orange.svg">
+</p>
 
-This repository provides the PyTorch implementation of CGDPM, with a unified training pipeline and support for Transformer, Autoformer, TimesNet, PatchTST, Crossformer, FEDformer, Informer, DLinear, TimeFilter, and TimeMixer.
+---
+
+## Overview
+
+Enterprise credit rating increasingly relies on heterogeneous data sources with inconsistent update frequencies, resulting in heterogeneous temporal granularity across variables. Existing methods mainly focus on unified temporal modeling and do not explicitly leverage the distinct roles of low-frequency structural signals and high-frequency temporal dynamics.
+
+CGDPM (**C**onstant-**G**uided **H**eterogeneous-Aware **D**ual-**P**hase **M**odulation) addresses this issue through:
+
+- **Switchable temporal encoders** for modeling high-frequency temporal dynamics
+- **Constant-guided clustering** for capturing low-frequency piece-wise constant information
+- **Dual-phase feature-wise modulation** for coarse-to-fine heterogeneous fusion
+
+Experiments on a real-world heterogeneous enterprise dataset demonstrate strong effectiveness and compatibility across multiple temporal backbones.
+
+<p align="center">
+  <img src="figures/framework.jpg" width="95%">
+</p>
+
+---
 
 ## Requirements
 
